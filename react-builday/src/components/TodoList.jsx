@@ -7,6 +7,7 @@ export default function TodoList({todos}) {
         <TodoItem
           key={todo.id}
           task={todo.task}
+          id={todo.id}
         />
       ))}
         </div>
