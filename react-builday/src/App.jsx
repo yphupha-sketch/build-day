@@ -4,16 +4,16 @@ import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
 import TodoList from "./components/TodoList";
 
-export default function App() {
-  const [count, setCount] = useState(0)
+
+function App() {
 
   return (
-
-    <div>
-      <h1>My To-Do List</h1>
-      <TodoForm />
-      <TodoItem />
-      <TodoList />
-    </div>
+    <>
+    <h1>to do list</h1>
+    <TodoForm/>
+     
+    </>
   )
 }
+
+export default App
