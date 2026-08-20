@@ -6,9 +6,7 @@ import TodoList from "./components/TodoList";
 
 export default function App() {
   const [todos, setTodos] = useState([
-    { id: 1, task: "Learn React" },
-    { id: 2, task: "Practice JavaScript" },
-    { id: 3, task: "Build Todo App" },
+    
   ]);
 
   function handleAddTodo(task) {
