@@ -1,3 +1,28 @@
-export  default function TodoForm() {
-    return( <div className =" bg-orange-500" ><input id="add-new-task" type="text" placeholder="what to do?" value=""></input> </div>)
+import { useState } from "react";
+
+function TodoForm() {
+  const [task, setTask] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    console.log(task);
+
+    setTask("");
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        placeholder="Enter a task..."
+        value={task}
+        onChange={(event) => setTask(event.target.value)}
+      />
+
+      <button type="submit">Add</button>
+    </form>
+  );
 }
+
+export default TodoForm;
