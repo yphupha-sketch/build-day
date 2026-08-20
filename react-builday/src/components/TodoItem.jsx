@@ -1,9 +1,9 @@
-function TodoItem(props) {
+function TodoItem({ task }) {
   return (
     <div>
       <input type="checkbox" />
 
-      <span>{props.text}</span>
+      <span>{task}</span>
 
       <button>Delete</button>
     </div>
