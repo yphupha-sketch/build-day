@@ -5,7 +5,7 @@ function TodoItem({ task }) {
 
       <span>{task}</span>
 
-      <button onClick={()=>onDeleteto(id)}>Delete</button>
+      <button onClick={()=>onDeletetodo(id)}>Delete</button>
     </div>
   );
 }

@@ -8,6 +8,7 @@ export default function TodoList({todos}) {
           key={todo.id}
           task={todo.task}
           id={todo.id}
+          onDeleteTodo={onDeleteTodo}
         />
       ))}
         </div>
