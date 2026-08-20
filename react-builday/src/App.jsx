@@ -6,11 +6,11 @@ import TodoList from "./components/TodoList";
 
 
 function App() {
-  const todos = [
+  const [todos, setTodos] = ustState([
     { id: 1, task: "Learn React" },
     { id: 2, task: "Practice JavaScript" },
     { id: 3, task: "Build Todo App" },
-  ]
+  ]);
 
   return (
     <div>
