@@ -1,4 +1,4 @@
-function TodoItem({ task }) {
+function TodoItem({ task,id,onDeleteTodo }) {
   return (
     <div>
       <input type="checkbox" />
