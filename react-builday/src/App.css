@@ -182,3 +182,11 @@
     border-right-color: var(--border);
   }
 }
+
+span {
+  color: rgb(55, 29, 11);
+}
+
+body {
+  background-color: rgb(204, 160, 243);
+}

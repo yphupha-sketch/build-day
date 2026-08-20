@@ -23,7 +23,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className='boxtodo'>
       <h1>To Do List</h1>
 
       <TodoForm onAddTodo={handleAddTodo} />
