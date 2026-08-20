@@ -1,9 +1,14 @@
 import TodoItem from './TodoItem';
 
-export default function TodoList() {
-    return (
+export default function TodoList({todos}) {
+    return ( 
         <div>
-            <TodoItem task="clean" />
+            {todos.map((todo) => (
+        <TodoItem
+          key={todo.id}
+          task={todo.task}
+        />
+      ))}
         </div>
     );
 }
