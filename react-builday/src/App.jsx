@@ -8,11 +8,11 @@ import TodoList from "./components/TodoList";
 function App() {
 
   return (
-    <>
-    <h1>to do list</h1>
-    <TodoForm/>
-     
-    </>
+    <div>
+      <h1>To Do List</h1>
+      <TodoForm />
+      <TodoItem />
+    </div>
   )
 }
 
