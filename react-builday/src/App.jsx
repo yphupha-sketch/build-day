@@ -12,10 +12,14 @@ function App() {
     { id: 3, task: "Build Todo App" },
   ]);
 
+  function handleAddTodo(task) {
+    console.log("New task:", task);
+
   return (
     <div>
       <h1>To Do List</h1>
-      <TodoForm />
+
+      <TodoForm onAddTodo={handleAddTodo} />
       
       <TodoList todos={todos} />
     </div>
