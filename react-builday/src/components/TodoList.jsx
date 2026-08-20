@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem';
 
-export default function TodoList({todos}) {
+export default function TodoList({ todos, onDeleteTodo }) {
     return ( 
         <div>
             {todos.map((todo) => (
