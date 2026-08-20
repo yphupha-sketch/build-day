@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import TodoForm from "./components/TodoForm";
-import TodoItem from "./components/TodoItem";
 import TodoList from "./components/TodoList";
 
 
@@ -13,7 +12,12 @@ export default function App() {
   ]);
 
   function handleAddTodo(task) {
-    console.log("New task:", task);
+    const newTodo = {
+      id: Date.now(),
+      task: task,
+    };
+
+    setTodos([...todos, newTodo]);
   }
 
   return (
