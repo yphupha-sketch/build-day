@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-function TodoForm() {
+function TodoForm({onAddTodo}) {
   const [task, setTask] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    console.log(task);
+    onAddTodo(task)
 
     setTask("");
   }
