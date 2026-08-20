@@ -6,6 +6,11 @@ export default function App() {
 
   return (
 
-    <div>Loading...</div>
+    <div>
+      <h1>My To-Do List</h1>
+      <TodoForm />
+      <TodoItem />
+      <TodoList />
+    </div>
   )
 }
