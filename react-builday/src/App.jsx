@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import TodoForm from "./TodoForm";
-import TodoItem from "./TodoItem";
-import TodoList from "./TodoList";
+import TodoForm from "./component/TodoForm";
+import TodoItem from "./components/TodoItem";
+import TodoList from "./components/TodoList";
 
 export default function App() {
   const [count, setCount] = useState(0)
