@@ -5,7 +5,7 @@ import TodoItem from "./components/TodoItem";
 import TodoList from "./components/TodoList";
 
 
-function App() {
+export default function App() {
   const [todos, setTodos] = useState([
     { id: 1, task: "Learn React" },
     { id: 2, task: "Practice JavaScript" },
@@ -14,6 +14,7 @@ function App() {
 
   function handleAddTodo(task) {
     console.log("New task:", task);
+  }
 
   return (
     <div>
@@ -25,5 +26,3 @@ function App() {
     </div>
   )
 }
-
-export default App
