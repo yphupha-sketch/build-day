@@ -13,14 +13,14 @@ function TodoForm({onAddTodo}) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <input className="border-2 border-red-400 bg-red-200"
         type="text"
         placeholder="Enter a task..."
         value={task}
         onChange={(event) => setTask(event.target.value)}
       />
 
-      <button type="submit">Add</button>
+      <button className="border-2 border-amber-400 bg-amber-200" type="submit">Add</button>
     </form>
   );
 }
